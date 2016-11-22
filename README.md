@@ -6,7 +6,9 @@
 >nim e build.nims</br>
 >cd example</br>
 >nim c base.nim</br>
->LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/\<path to cloned nim forestdb bind\>/forestdb/build/ ./base</br>
+>LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/\<path to cloned nim forestdb bind\>/libforestdb/build/ ./base</br>
 ></br>
+
+
 
 
