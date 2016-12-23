@@ -22,7 +22,8 @@ if false == dirExists(dirName):
 
 withDir dirName:
   exec "git checkout v1.2"                     # Get the latest stable release
-  mkDir buildDir
+  if false == dirExists(buildDir):
+    mkDir buildDir
   withDir buildDir:
     exec "cmake -DCMAKE_BUILD_TYPE=Debug ../"  # Change to Release in production
     exec "make all"
